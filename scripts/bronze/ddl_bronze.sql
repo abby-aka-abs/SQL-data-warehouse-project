@@ -1,7 +1,9 @@
-IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
+--Creating DDL scripts bulk inserting data into tables
+
+IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL --Checks if customer info table exists and if it does it drops the table
 	DROP TABLE bronze.crm_cust_info;
 
-CREATE TABLE bronze.crm_cust_info (
+CREATE TABLE bronze.crm_cust_info ( --Creating Customer info table and columns
 cst_id INT,
 cst_key NVARCHAR(50),
 cst_firstname NVARCHAR(50),
