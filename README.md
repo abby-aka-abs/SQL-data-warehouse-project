@@ -14,4 +14,8 @@ The core elements of this project include:
 -Analytics & Reporting: Developing dashboards and reports using SQL to provide useful information.
 
 ## Architectural Map
-<img width="1073" height="614" alt="image" src="https://github.com/user-attachments/assets/7c6934e7-9d78-4f36-a0e9-65ad20dc8597" />
+<img width="1100" height="623" alt="image" src="https://github.com/user-attachments/assets/37502b9a-d6c4-40c4-a64e-28f372382bac" />
+
+
+## Relationship & Integration Map
+<img width="1465" height="705" alt="image" src="https://github.com/user-attachments/assets/be5e8ad1-91b2-4976-b5a3-df0d54826c48" />
