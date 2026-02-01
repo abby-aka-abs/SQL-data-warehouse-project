@@ -1,9 +1,9 @@
-EXEC bronze.load_bronze
+EXEC bronze.load_bronze --Runs stored bronze load procedure
 
-CREATE OR ALTER PROCEDURE bronze.load_bronze AS 
+CREATE OR ALTER PROCEDURE bronze.load_bronze AS -- Creating stored procedure to load bronze layer 
 BEGIN
-	DECLARE @start_time DATETIME, @end_time DATETIME;
-	DECLARE @batch_start_time DATETIME, @batch_end_time DATETIME;
+	DECLARE @start_time DATETIME, @end_time DATETIME; -- Setting a start time and end time variables to track time it takes to load data into tables
+	DECLARE @batch_start_time DATETIME, @batch_end_time DATETIME; -- Start and end time variables for whole batch 
 	
 	BEGIN TRY
 		SET @batch_start_time = GETDATE();
@@ -123,7 +123,7 @@ BEGIN
 	PRINT'================================================'
 	END TRY
 
-	BEGIN CATCH
+	BEGIN CATCH -- Catch errors in loading data to tables
 		PRINT'=========================================='
 		PRINT 'ERROR OCCURED DURING LOADING BRONZE LAYER'
 		PRINT 'Error Message' + ERROR_MESSAGE();
