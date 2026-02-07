@@ -1,17 +1,25 @@
 # SQL Data Warehouse Project
-From creating a data warehouse to producing useful insights, this project exemplifies a complete data warehousing and analytics solution. Designed as a portfolio project, it showcases industry best practices in analytics and data engineering.
+This project demonstrates an end-to-end data warehousing and analytics solution, covering the full lifecycle from raw data ingestion to actionable business insights. Designed as a portfolio project, it reflects industry-standard data engineering and analytics best practices commonly used in modern enterprise environments
 
 ## Project Overview
 
-The core elements of this project include:
+Data Architecture
+Implemented a Medallion Architecture (Bronze, Silver, Gold) to design a scalable and maintainable SQL-based data warehouse.
 
--Data Architecture: Using the Bronze, Silver, and Gold levels of Medallion Architecture to Create a Contemporary Data Warehouse.
+Bronze Layer: Raw, ingested data stored with minimal transformation
 
--SQL ETL Pipelines: Data extraction, transformation, and loading from source systems into the warehouse are done via ETL pipelines.
+Silver Layer: Cleansed, standardized, and enriched datasets
 
--Data Modeling: Creating fact and dimension tables that are ideal for analytical queries is known as data modeling.
+Gold Layer: Analytics-ready datasets optimized for reporting and insights
 
--Analytics & Reporting: Developing dashboards and reports using SQL to provide useful information.
+SQL ETL Pipelines
+Developed robust SQL-based ETL pipelines to extract data from source systems, apply transformations, and load it into the warehouse. Emphasis was placed on data quality, consistency, and incremental processing.
+
+Data Modeling
+Designed fact and dimension tables using dimensional modeling principles (star schema) to support high-performance analytical queries and business reporting.
+
+Analytics & Reporting
+Built SQL-driven analytical queries, reports, and dashboards to surface key metrics, trends, and insights, enabling data-driven decision-making.
 
 ## Architectural Map
 <img width="1100" height="623" alt="image" src="https://github.com/user-attachments/assets/37502b9a-d6c4-40c4-a64e-28f372382bac" />
